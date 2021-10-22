@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/server_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="server地址(wss://)"
+        android:text="wss://1.117.248.121/wss" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/port_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="端口" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/room_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="房间号"
+        android:text="23333" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="JoinRoom"
+        android:text="加入房间"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="JoinRoomSingleVideo"
+        android:text="一对一视频聊天"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="JoinRoomSingleAudio"
+        android:text="一对一语音聊天"
+        tools:ignore="OnClick" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
